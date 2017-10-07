@@ -1,0 +1,18 @@
+/* Main Stylesheet */
+/** Colors! */
+/* @import scheme/light */
+/** Dark Colors! */
+body {
+  background: #111;
+  color: #ededed; }
+
+a {
+  color: #d73; }
+  a:hover {
+    color: #924918; }
+
+main, aside {
+  background: #ededed;
+  color: #333; }
+
+/*# sourceMappingURL=style.css.map */
