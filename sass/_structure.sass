@@ -1,0 +1,33 @@
+/** Structure **/
+
+body
+    width: 900px
+    max-width: 90%
+
+@media #{$teeny}
+    header
+        text-align: center
+header
+    h1
+        padding-bottom: 0
+        @media #{$biggo}
+            margin-bottom: -60px
+
+main
+    @media #{$biggo}
+        vertical-align: top
+        display: inline-block
+        width: 500px / 900px * 100%
+    margin-bottom: 1em
+
+body>aside
+    @extend main
+    @media #{$biggo}
+        width: 375px / 900px * 100%
+
+article, section
+    padding: .5em 0 1em
+
+footer
+    padding-bottom: 1em
+    text-align: center

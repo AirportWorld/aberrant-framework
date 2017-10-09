@@ -1,6 +1,6 @@
 /** Colors! **/
-/* @import scheme/light
-@import scheme/dark
+@import scheme/light
+/*@import scheme/dark
 
 body
     background: $bodyBackground
@@ -11,9 +11,15 @@ a
     &:hover
         color: darken($accent, 20%)
 
-main
+main, aside
     background: $mainBackground
     color: $mainText
+    a
+        color: $innerAccent
+        &:hover
+            color: darken($innerAccent, 20%)
 
-aside
-    @extend main
+article, section
+    border-bottom: 3px solid darken($mainBackground, 2.5%)
+    &:last-of-type
+        border-bottom: 0

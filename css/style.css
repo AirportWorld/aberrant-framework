@@ -1,18 +1,133 @@
 /* Main Stylesheet */
-/** Colors! */
-/* @import scheme/light */
-/** Dark Colors! */
+/* Reseti */
+/** Reset */
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab");
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, form, a, fieldset, input, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none; }
+
 body {
-  background: #111;
-  color: #ededed; }
+  line-height: 1;
+  margin: 0 auto; }
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: 100%;
+  padding: 0.2em 0;
+  margin: 0 15px; }
+
+/* Colors */
+/** Colors! */
+/** Light Colors! */
+/*@import scheme/dark */
+body {
+  background: #ebefe9;
+  color: #222; }
 
 a {
-  color: #d73; }
+  color: #a0f; }
   a:hover {
-    color: #924918; }
+    color: #660099; }
 
-main, aside {
-  background: #ededed;
-  color: #333; }
+main, body > aside, aside {
+  background: rgba(34, 34, 34, 0.5);
+  color: #efefef; }
+  main a, body > aside a, aside a {
+    color: #b9f; }
+    main a:hover, body > aside a:hover, aside a:hover {
+      color: #7733ff; }
+
+article, section {
+  border-bottom: 3px solid rgba(28, 28, 28, 0.5); }
+  article:last-of-type, section:last-of-type {
+    border-bottom: 0; }
+
+/* Typography */
+/** Typography */
+body {
+  font: 16pt/18pt Montserrat, Verdana, Arial, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font: 1.5em/2em "Roboto Slab", Garamond, Georgia, Times, serif; }
+
+h2, aside h3 {
+  font-size: 1.25em;
+  line-height: 1.3em; }
+
+h3 {
+  font-size: 1.1em;
+  line-height: 1.25em; }
+
+h4 {
+  font-size: 1em;
+  line-height: 1.25em; }
+
+/* Structure */
+/** Structure */
+body {
+  width: 900px;
+  max-width: 90%; }
+
+@media (max-width: 450px) {
+  header {
+    text-align: center; } }
+header h1 {
+  padding-bottom: 0; }
+  @media (min-width: 900px) {
+    header h1 {
+      margin-bottom: -60px; } }
+
+main, body > aside {
+  margin-bottom: 1em; }
+  @media (min-width: 900px) {
+    main, body > aside {
+      vertical-align: top;
+      display: inline-block;
+      width: 55.5555555556%; } }
+
+@media (min-width: 900px) {
+  body > aside {
+    width: 41.6666666667%; } }
+
+article, section {
+  padding: 0.5em 0 1em; }
+
+footer {
+  padding-bottom: 1em;
+  text-align: center; }
+
+/* Menu */
+/** Menu Styles */
+@media notBiggo {
+  header > nav {
+    text-align: center; } }
+header > nav ul {
+  list-style: none;
+  padding: 0;
+  overflow: hidden; }
+@media (min-width: 900px) {
+  header > nav {
+    text-align: right; }
+    header > nav p#menu-toggle {
+      display: none; }
+    header > nav li {
+      display: inline-block;
+      padding: 0 1em; } }
+@media (max-width: 899px) {
+  header > nav p#menu-toggle {
+    padding-bottom: 0;
+    cursor: pointer;
+    text-decoration: underline; }
+  header > nav ul.hide {
+    max-height: 0; }
+  header > nav ul.show {
+    max-height: 9999em; }
+  header > nav li {
+    padding: 0.5em 1em; }
+    header > nav li a {
+      display: block;
+      width: 100%;
+      height: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
