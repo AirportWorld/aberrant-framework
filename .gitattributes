@@ -1,0 +1,4 @@
+* text=auto
+*.html text eol=lf
+*.sass text eol=lf
+*.js text eol=lf
