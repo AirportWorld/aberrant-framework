@@ -1,0 +1,16 @@
+{
+  "name": "aberrant-framework",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Simple website framework in HTML and Sass, based on the Aberrant Media Framework",
+  "keywords": [
+    "sass",
+    "html",
+    "html5"
+  ],
+  "scripts": {
+    "build": "jekyll build",
+    "start": "jekyll serve"
+  },
+  "license": "MIT"
+}
