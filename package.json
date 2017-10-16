@@ -1,7 +1,7 @@
 {
   "name": "aberrant-framework",
   "private": true,
-  "version": "0.0.1-beta.1",
+  "version": "0.0.1",
   "description": "Simple website framework in HTML and Sass, based on the Aberrant Media Framework",
   "keywords": [
     "sass",
